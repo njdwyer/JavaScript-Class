@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+   var birthDate = prompt("Users birth date, Month Day, Year");
+   var actualBirthDate = new Date(birthDate);
+   var timeInMS = actualBirthDate.getTime();
+   var dateNow = new Date();
+   var currentTimeInMS = dateNow.getTime();
+   var age = (currentTimeInMS - timeInMS) / 1000 / 60 / 60 / 24;
+   echo(age);
+ </script>
+</body>
+</html>
