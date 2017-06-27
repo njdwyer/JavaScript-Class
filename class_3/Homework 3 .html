@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>sign</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+<script>
+let input = prompt('enter your date of birth in format Dec 31, 1999.');
+birthday = new Date(input);
+let month = birthday.getMonth();
+let date = birthday.getDate();
+if (month == 0) {
+	if (date < 20) {
+		echo('Aquarius')
+	} else {
+		echo('Pisces')
+	}
+} else if (month == 1) {
+	if (date < 20) {
+		echo('Pisces')
+	} else {
+		echo('Aries')
+	}
+} else if (month == 2) {
+	if (date < 22) {
+		echo('Aries')
+	} else {
+		echo('Taurus')
+	}
+} else if (month == 3) {
+	if (date < 21) {
+		echo('Taurus')
+	} else {
+		echo('Gemini')
+	}
+} else if (month == 4) {
+	if (date < 22) {
+		echo("Gemini")
+	} else {
+		echo("Cancer")
+	}
+} else if (month == 5) {
+	if (date < 20) {
+		echo('Cancer')
+	} else {
+		echo('Leo')
+	}
+} else if (month == 6) {
+	if (date < 24) {
+		echo('Leo')
+	} else {
+		echo('Virgo')
+	}
+} else if (month == 7) {
+	if (date < 23) {
+		echo('Virgo')
+	} else {
+		echo('Libra')
+	}
+} else if (month == 8) {
+	if (date < 21) {
+		echo('Libra')
+	} else {
+		echo('Scorpio')
+	}
+} else if (month == 9) {
+	if (date < 22) {
+		echo('Scorpio')
+	} else {
+		echo('Sagittarius')
+	}
+} else if (month == 10) {
+	if (date < 22) {
+		echo('Scoprio')
+	} else {
+		echo('Capricon')
+	}
+} else if (month == 11) {
+	if (date < 20) {
+		echo('Capricorn')
+	} else {
+		echo('Aguariis')
+	}
+}
+</script>
+</body>
+</html>
