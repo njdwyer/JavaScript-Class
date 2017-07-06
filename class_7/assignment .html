@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+ (function (){
+ 
+ 
+   let input = prompt('enter a year YYYY');
+input = Number(input);
+//let animals = ["Rat", "Ox", "Tiger", "rabbit", "Dragon", "Snake ", " Horse ", " Goat ", " Monkey ", " Rooster ", " Dog ", " Pig "]
+let animalNumber = (input+8)%12
+	//echo (animals[(input + 8)%12]);
+switch (animalNumber) {
+	case 9:
+	
+		alert("Rooster. Next year will be " + (input + 12));
+		break;
+	case 10:
+		alert ("Dog. Next year will be " + (input + 12));
+		break;
+	case 11:
+		alert ("Pig. Next year will be " + (input + 12));
+		break;
+	case 0:
+		alert ("Rat. Next year will be " + (input + 12));
+		break;
+	case 1:
+		alert ("Ox. Next year will be " + (input + 12));
+		break;
+	case 2:
+		alert ("Tiger. Next year will be " + (input + 12));
+		break;
+	case 3:
+		alert ("rabbit. Next year will be " + (input + 12));
+		break;
+	case 4:
+		alert ("Dragon. Next year will be " + (input + 12));
+		break;
+	case 5:
+		alert ("Snak. Next year will be e" + (input + 12));
+		break;
+	case 6:
+		alert ("Horse. Next year will be " + (input + 12));
+		break;
+	case 7:
+		alert ("Goat. Next year will be " + (input + 12));
+		break;
+	case 8:
+		alert ("Monkey. Next year will be " + (input + 12));
+		break;
+	default:
+		alert("thats not a year");
+}		
+})();
+
+function someFunction() {
+
+}
+
+someFuncion();
+ </script>
+</body>
+</html>
