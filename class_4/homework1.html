@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+//mostly based on adams homework
+isPalindrome(prompt("Enter text"));
+function isPalindrome(stuffs) {
+	let enterd = stuffs.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+	let checkPalindrome = enterd.split('').reverse().join('');
+	if(enterd === checkPalindrome) {
+		echo(stuffs + " is a Palindrome.");
+		}	else {
+			echo(stuffs + " isn't a Palindrome.")
+		}
+}
+ </script>
+</body>
+</html>
