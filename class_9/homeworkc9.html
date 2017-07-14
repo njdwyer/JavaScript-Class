@@ -99,16 +99,26 @@
             <figure>
                 <img src="thumbs/DSC_0438.JPG" alt="Horses" />
             </figure>
+			<figure>
+                <img src="thumbs/DSC_0438.JPG" alt="Horses" />
+            </figure>
         </div>
     </div>
     <script>
     (function () {
-			let images = document.querySelectorAll("img");
-			for (let i = 0; i < images.length; i++){
-				let alt = images[i].getAttribute("alt");
-				images[i].setAttribute("title", alt);
-				}
-    }) ();
+    	let images = document.querySelectorAll("img");
+    	let numberImages = images.length;
+    	for (let i = 0; i < images.length; i++) {
+    		let alt = images[i].getAttribute("alt");
+    		let caption = document.createElement("figCaption");
+    		caption.textContent = alt;
+    		let fig = images[i].parentElement;
+    		fig.append(caption);
+    		images[i].setAttribute("title", alt);
+    	}
+    	let para = document.querySelector("p");
+    	para.childNodes[2].textContent = " " + numberImages;
+    })();
     </script>
 </body>
 </html>

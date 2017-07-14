@@ -108,6 +108,10 @@
 				let alt = images[i].getAttribute("alt");
 				images[i].setAttribute("title", alt);
 				}
+				let para = document.querySelector("p");
+				para.lastChild.textContent = " " + (new Date());
+				let hr = document.querySelector("hr");
+				hr.remove();
     }) ();
     </script>
 </body>

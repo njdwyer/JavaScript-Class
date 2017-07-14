@@ -103,10 +103,10 @@
     </div>
     <script>
     (function () {
-			let images = document.querySelectorAll("img");
-			for (let i = 0; i < images.length; i++){
-				let alt = images[i].getAttribute("alt");
-				images[i].setAttribute("title", alt);
+			let image = document.querySelectorAll("figure");
+			for (let i = 0; i < image.length; i++){
+				let alt = image[i].getAttribute("alt");
+				image[i].setAttribute("title", alt);
 				}
     }) ();
     </script>
